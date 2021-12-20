@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+    <head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LOGIN PAGE</title>
+        <link rel="stylesheet" href="./stylesheets/style.css">
+
+    </head>
+    <style>
+        a:link {
+        text-decoration: none; 
+        color: inherit;
+        }
+    </style>
+
+    <body>
+        <!-- Box for Background-->
+            <!-- Box containing Spotifind carousel etc-->
+            <div class="carousel_container">
+                <p class="product_name">Spoti-find</p>
+                <!--Para for brief page description-->
+                <p class="initial_prompt">Please insert your login credentials:</p>
+                
+                <div class="prompt_box">
+                <!--User Prompt-->
+                User:
+                <input type="text" id="user" name="user" required minlength="4" maxlength="8" size="10">
+                </div>
+
+                <div class="prompt_box">
+                <!--Password Prompt-->
+                Password:
+                <input type="password" id="myInput" name="login" required minlength="4" maxlength="8" size="10">
+                <!-- An element to toggle between password visibility -->
+                <input type="checkbox" onclick="myFunction()">Show Password
+            </div>
+            <button onclick="location.href='http://www.google.com'" type="button">
+                Login</button>
+            </div>  
+        <!--Footer-->
+        <div class="footer">
+            <p>Brought to you by Ryan Coleman and Luis Jaar</p>
+        </div>
+    </body>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myInput");
+            if (x.type === "password") {
+            x.type = "text";
+            } else {
+            x.type = "password";
+            }
+        } 
+    </script>
+</html>
