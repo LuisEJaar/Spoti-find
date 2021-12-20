@@ -5,8 +5,8 @@ html, body {
   font-family: "Roboto", sans-serif;
 }
 body {
-  background-color: #fbab7e;
-  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+  background-color: rgb(147,188,129);
+  background-image: linear-gradient(62deg, rgb(147,188,129) 0%, rgb(129,183,26) 100%);
 }
 main section {
   width: 100%;
