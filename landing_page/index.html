@@ -7,6 +7,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>LANDING PAGE</title>
         <link rel="stylesheet" href="./style.css">
+        
+        <!--Added following 2 lines for font awesome styling-->
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     </head>
     <style>
         a:link {
@@ -18,13 +22,52 @@
     <body>
 
         <!-- Box for Background-->
+        <div class = "body">
             <!-- Box containing Spotifind carousel etc-->
+            <div class="carousel_container">
                 <!--Header for product name-->
+                <p class="product_name">"Spoti-find"</p>
                 <!--Para for brief product description-->
+                <p class="product_description">"A handy tool for the Spotify playlist enthusiast"</p>
                 <!--Carousel for images / text-->
+                <div class="carousel">
+                    <!--Source for carousel: https://codepen.io/luxonauta/pen/QWEWvmB?editors=1000-->
+                    <!--Pug Conversion: https://pughtml.com/-->
+                    <main>
+                        <section class="has-dflex-center">
+                            <div class="lx-container-80">
+                                <div class="lx-row">
+                                    <div class="lx-card carousel-container">
+                                        <div class="item fade">
+                                            <div class="image"><img src="https://bit.ly/34xczKy" /></div>
+                                        </div>
+                                        <div class="item fade">
+                                            <div class="image"><img src="https://bit.ly/3lkp5DW" /></div>
+                                            <div class="text is-text-left">
+                                                <h1 class="title"> <i class="far fa-hand-point-right"></i>&nbsp;This item has a title.</h1>
+                                                <p>This item has a caption, aligned to the left.</p>
+                                            </div>
+                                        </div>
+                                        <div class="item fade">
+                                            <div class="image"><img src="https://bit.ly/3iMHuI1" /></div>
+                                            <div class="text is-text-centered">
+                                                <p> <i class="fas fa-info-circle"></i>&nbsp;This item has a caption, aligned to the center.</p>
+                                            </div>
+                                        </div><a class="prev has-dflex-center"><i class="fas fa-angle-left"></i></a><a class="next has-dflex-center"><i class="fas fa-angle-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </main>
+                </div>
                 <!--Button to launch second page-->
+                <button class="landing_button">"Lets get started"</button>
+            </div>  
+        </div>
         <!--Footer-->
-
+        <div class="footer">
+            <p>"Brought to you by Ryan Coleman and Luis Jaar"</p>
+        </div>
     </body>
 
     <script>
