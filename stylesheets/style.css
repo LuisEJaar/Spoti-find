@@ -4,15 +4,22 @@
 html, body {
   font-family: "Roboto", sans-serif;
 }
+
 body {
   background-color: rgb(147,188,129);
   background-image: linear-gradient(62deg, rgb(147,188,129) 0%, rgb(129,183,26) 100%);
+  display:flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
+
 main section {
   width: 100%;
-  min-height: 100vh;
   padding: 4rem 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
+
 main section .carousel-container {
   width: 100%;
   height: 40rem;
@@ -21,6 +28,7 @@ main section .carousel-container {
   overflow: hidden;
   border-radius: 0.375rem;
 }
+
 main section .carousel-container .item {
   width: 100%;
   height: 100%;
@@ -28,6 +36,8 @@ main section .carousel-container .item {
   display: none;
   animation: fade 0.3s ease-in-out;
 }
+
+/*Page counter*/
 main section .carousel-container .item .numbertext {
   padding: 0.5rem 0.75rem;
   position: absolute;
@@ -38,16 +48,18 @@ main section .carousel-container .item .numbertext {
   color: #f2f2f2;
   background-color: rgba(0, 0, 0, 0.9);
 }
+
 main section .carousel-container .item .image {
   width: 100%;
   height: 100%;
-  display: flex;
 }
+
 main section .carousel-container .item .image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 main section .carousel-container .item .text {
   width: 100%;
   padding: 0.625rem 0.9375rem;
@@ -57,11 +69,13 @@ main section .carousel-container .item .text {
   color: #f2f2f2;
   background-color: rgba(0, 0, 0, 0.9);
 }
+
 main section .carousel-container .item .text .title {
   margin: 0.5rem 0 0 0;
   font-size: 1.2rem;
   font-weight: normal;
 }
+
 main section .carousel-container .prev, main section .carousel-container .next {
   width: 2rem;
   height: 2rem;
@@ -74,21 +88,26 @@ main section .carousel-container .prev, main section .carousel-container .next {
   border-radius: 50%;
   transition: 0.6s ease;
 }
+
 main section .carousel-container .prev:focus, main section .carousel-container .next:focus, main section .carousel-container .prev:hover, main section .carousel-container .next:hover {
   background-color: rgba(0, 0, 0, 0.9);
 }
+
 main section .carousel-container .prev {
   left: 0.8rem;
 }
+
 main section .carousel-container .next {
   right: 0.8rem;
 }
+
 main section .carousel-container .dots {
   padding: 0.9375rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 main section .carousel-container .dots .dot {
   width: 0.625rem;
   height: 0.625rem;
@@ -99,16 +118,70 @@ main section .carousel-container .dots .dot {
   background-color: #bbb;
   transition: background-color 0.6s ease;
 }
+
 main section .carousel-container .dots .dot:focus, main section .carousel-container .dots .dot:hover {
   background-color: #717171;
 }
+
 @keyframes fade {
   from {
     opacity: 0.8;
  }
+
   to {
     opacity: 1;
  }
 }
 
 /*Added by user LuisJaar*/
+
+.carousel_container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #828282;
+  border-radius: 45px;
+  margin: 5%;
+  padding: 2%;
+}
+
+.product_name{
+  display: flex;
+  font-size: 40px;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+}
+
+.product_description {
+  display: flex;
+  font-weight: 200;
+}
+
+.landing_button {
+  display: flex;
+  padding: 1px;
+  margin-bottom: 20px;
+}
+
+button {
+  background: white;
+  border-color: white;
+  color: black;
+  border-width: 2px;
+  border-radius: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.footer {
+  display: flex;
+  background: #1F2937;
+  font-size: 14px;
+  color:#E5E7EB;
+  height: 30px;
+  margin-top: auto;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  }
+
