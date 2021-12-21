@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+    <head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SPOTIFIND WEBAPP</title>
+        <link rel="stylesheet" href="./stylesheets/style.css">
+
+    </head>
+    <style>
+        a:link {
+        text-decoration: none; 
+        color: inherit;
+        }
+    </style>
+
+    <body>
+            <!-- Box containing Spotifind carousel etc-->
+            <div class="carousel_container">
+
+                <p class="product_name">Spoti-find</p>
+                
+                <p class="initial_prompt">Fill prompts to find your playlist!</p>
+                
+                <div class="interactive-content-container">
+
+                    <div class="lh-prompt-box">
+                        <div class="prompt_box">
+                            <!--User Prompt-->
+                            User to search:
+                            <input type="text" id="user" name="user" required minlength="4" maxlength="8" size="10">
+                            </div>
+
+                            <button onclick="location.href='http://www.google.com'" type="button">
+                                Begin</button>
+                        
+                        <div class="prompt_box">
+                        
+                            <label for="cars">Labels to include:</label>
+
+                            <select name="cars" id="cars">
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="mercedes">Mercedes</option>
+                            <option value="audi">Audi</option>
+                            </select>  
+                        </div>
+
+                        <!--Draft for prompt box-->
+                        
+                        <!--Ideally a box you can type into and
+                        results would filter based on what is typed
+                        users could select check boxes basead on what 
+                        they want to include in search-->
+
+                        <div class="prompt_box">
+                        
+                            <label for="cars">Songs / Artists:</label>
+
+                            <select name="cars" id="cars">
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="mercedes">Mercedes</option>
+                            <option value="audi">Audi</option>
+                            </select>  
+                        </div>
+
+                    </div>
+
+                    <div class="rh-info-box">
+                        <div class="prompt_box">
+                        
+                            User:
+                            <input type="text" id="user" name="user" required minlength="4" maxlength="8" size="10">
+                            </div>
+    
+                            <div class="prompt_box">
+                            
+                            Password:
+                            <input type="password" id="myInput" name="login" required minlength="4" maxlength="8" size="10">
+                            
+                            <input type="checkbox" onclick="myFunction()">Show Password
+                            </div>
+                    </div>
+                </div>
+            </div>
+        <!--Footer-->
+        <div class="footer">
+            <p>Brought to you by Ryan Coleman and Luis Jaar</p>
+        </div>
+    </body>
+    <script>
+
+        //Tie begin button to a function that searches for user
+        //Return message if user cannot be found
+        //Create array for labels if user can be found and labels exist
+        //Return n/a if no labels can be found
+        //Return array for all possible songs
+        //Return array for all possible artists
+       
+    </script>
+</html>
